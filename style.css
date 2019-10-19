@@ -1,0 +1,58 @@
+#table {
+/*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+font-size: 12px;
+border-collapse: collapse;
+/*width: 100%;*/
+}
+#table td {
+    width: 50px;
+}
+#table td, #table th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:hover {background-color: #ddd;}
+#table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+}
+#table td:nth-child(5) {
+    width: auto;
+}
+#table td:nth-child(6):nth-child(7) {
+    width: 100px;
+}
+
+input {
+    font-size: 12px;
+}
+input[type=number] {
+    width: 50px;
+}
+#select {
+    font-size: 12px;
+}
+#btn_save {
+     text-align:center;
+}
+#lastsavedtime {
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+#progess {
+  width: 100%;
+  background-color: grey;
+  padding-bottom: 10px;
+}
+
+#bar {
+  width: 1%;
+  height: 30px;
+  background-color: green;  
+}

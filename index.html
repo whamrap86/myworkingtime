@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyWorkingTime</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="lastsavedtime"><label id="lasttime">마지막 저장시간 :</label></div>
+    <div id="progress">
+      <div id="bar"></div>
+    </div>
+    <table id="table">
+        <tr>
+            <th>날짜</th>
+            <th>출근</th>
+            <th>퇴근</th>
+            <th>제외(분)</th>
+            <th>근무형태</th>
+            <th>근무시간</th>
+            <th>기타</th>
+        </tr>
+        <tr>
+            <td id="mon" class="date"></td>
+            <td><input name="mon_start" type="time" value="09:00" min="06:00" max="18:00"></td>
+            <td><input name="mon_end" type="time" value="18:00"></td>
+            <td><input name="mon_exception" type="number" value="0" min="0" max="720"></td>
+            <td>
+                <select class="status">
+                    <option value="정상근무">정상근무</option>
+                    <option value="전일-off">전일-off</option>
+                    <option value="반일-off">반일-off</option>
+                </select>
+            </td>
+            <td class="workingtime"></td>
+            <td class="etc"></td>
+        </tr>
+        <tr>
+            <td id="tue" class="date"></td>
+            <td><input name="tue_start" type="time" value="09:00" min="06:00" max="18:00"></td>
+            <td><input name="tue_end" type="time" value="18:00"></td>
+            <td><input name="tue_exception" type="number" value="0" min="0" max="720"></td>
+            <td>
+                <select class="status">
+                    <option value="정상근무">정상근무</option>
+                    <option value="전일-off">전일-off</option>
+                    <option value="반일-off">반일-off</option>
+                </select>
+            </td>
+            <td class="workingtime"></td>
+            <td class="etc"></td>
+        </tr>
+        <tr>
+            <td name="wed" class="date"></td>
+            <td><input name="wed_start" type="time" value="09:00" min="06:00" max="18:00"></td>
+            <td><input name="wed_end" type="time" value="18:00"></td>
+            <td><input name="wed_exception" type="number" value="0" min="0" max="720"></td>
+            <td>
+                <select class="status">
+                    <option value="정상근무">정상근무</option>
+                    <option value="전일-off">전일-off</option>
+                    <option value="반일-off">반일-off</option>
+                </select>
+            </td>
+            <td class="workingtime"></td>
+            <td class="etc"></td>
+        </tr>
+        <tr>
+            <td id="thu" class="date"></td>
+            <td><input name="thu_start" type="time" value="09:00" min="06:00" max="18:00"></td>
+            <td><input name="thu_end" type="time" value="18:00"></td>
+            <td><input name="thu_exception" type="number" value="0" min="0" max="720"></td>
+            <td>
+                <select class="status">
+                    <option value="정상근무">정상근무</option>
+                    <option value="전일-off">전일-off</option>
+                    <option value="반일-off">반일-off</option>
+                </select>
+            </td>
+            <td class="workingtime"></td>
+            <td class="etc"></td>
+        </tr>
+        <tr>
+            <td id="fri" class="date"></td>
+            <td><input name="fri_start" type="time" value="09:00" min="06:00" max="18:00"></td>
+            <td><input name="fri_end" type="time" value="18:00"></td>
+            <td><input name="fri_exception" type="number" value="0" min="0" max="720"></td>
+            <td>
+                <select class="status">
+                    <option value="정상근무">정상근무</option>
+                    <option value="전일-off">전일-off</option>
+                    <option value="반일-off">반일-off</option>
+                </select>
+            </td>
+            <td class="workingtime"></td>
+            <td class="etc"></td>
+        </tr>
+    </table><br>
+    <div id="btn_save">
+        <input type="button" value="저장"/>
+    </div>    
+    <script type="text/javascript" src="workingtime.js"></script>
+</body>
+</html>
