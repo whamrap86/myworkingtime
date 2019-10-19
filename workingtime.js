@@ -10,7 +10,9 @@ var totalHoursWorked = 0 ;
 // 출퇴근 시간, 제외시간, 쉬는날 정보가 바뀌면
 for(var i=0, len=inputs.length ; i<len ; i++) {
     inputs[i].addEventListener('change', inputHandler(i));
+//    inputs[i].addEventListener('change', inputHandler(i));
 }
+
 
 for(i=0, len=days.length ; i<len ; i++) {
   selectors[i].addEventListener('change', selectHandler(i));
